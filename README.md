@@ -1,26 +1,37 @@
-# vue-music
+# Vue音乐播放器
 
-> Vue.js 高级实战——音乐 App 课程源码，课程地址： http://coding.imooc.com/class/107.html
+# 技术栈
 
-本源码非开源项目，仅仅用于 Vue 实战项目的学习，不可作为商业用途。
-希望同学们一起努力抵制盗版侵权行为，尽量不要把这个项目开源。
+## 【前端】
 
-[项目演示地址](http://47.92.26.198:9000/)
+> Vue：用于构建用户界面的 MVVM 框架。它的核心是响应的数据绑定和组系统件
+> vue-router：为单页面应用提供的路由系统，项目上线前使用了 Lazy Loading Routes 技术来实现异步加载优化性能
+> vuex：Vue 集中状态管理，在多个组件共享某些状态时非常便捷
+> vue-lazyload：第三方图片懒加载库，优化页面加载速度
+> better-scroll：iscroll 的优化版，使移动端滑动体验更加流畅
+> Sass(Scss)：css 预编译处理器
+> ES6：ECMAScript 新一代语法，模块化、解构赋值、Promise、Class 等方法非常好用
 
-![二维码](http://qr.api.cli.im/qr?data=http%253A%252F%252F47.92.26.198%253A9000%252F&level=H&transparent=false&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=&size=280&kid=cliim&key=f349d2cedbecf0b7655323193ed801b2)
+## 【后端】
 
-## 你可以学到什么
-我们可以通过一张图来认识一下本课程的知识结构
+> Node.js：利用 Express 起一个本地测试服务器
+> jsonp：服务端通讯。抓取 QQ音乐(移动端)数据
+> axios：服务端通讯。结合 Node.js 代理后端请求，抓取 QQ音乐(PC端)数据
 
-![vue-sell](https://static.galileo.xiaojukeji.com/static/tms/shield/Vue.js_music_xmind.png)
+## 【自动化构建及其他工具】
 
-## 适合人群
-适合有一定 Vue.js 和前端基础知识并且想在 Vue.js 方向进阶同学。
+> vue-cli：Vue 脚手架工具，快速初始化项目代码
+> eslint：代码风格检查工具，规范代码书写
+> vConsole：移动端调试工具，在移动端输出日志
 
-## 源码结构
 
-每一章节都有独立的分支代码，建议同学们在学习的时候跟着视频手写 JS 部分代码，CSS 部分可以从源码中获取，但是一定要过一遍，确保自己理解。
+## Build Setup
 
-## Bug 修复
+### 下载或克隆下来，然后安装依赖
+> npm install
 
-由于项目有一定复杂度，所以难免会有 bug，同学们在发现有 bug 的话可以通过 issue 的方式提问，我都会解决。当然更欢迎同学们可以提供 pull request，一起帮助完善这个项目。
+### 开发预览
+> npm run dev
+
+### 打包发布，生成的文件在dist文件夹中
+> npm run build
